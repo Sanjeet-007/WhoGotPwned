@@ -147,7 +147,7 @@ function App() {
             </div>
           </div>
           <h1 className="text-5xl font-bold text-white mb-4 bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent animate-gradient">
-          WhoGotPwned
+            WhoGotPwned
           </h1>
           <p className="text-xl text-gray-300 max-w-2xl mx-auto">
             Check if your email has been compromised in our breach database. 
@@ -415,10 +415,34 @@ function App() {
         {/* Footer */}
         <footer className="text-center mt-12">
           <p className="text-gray-400">
-            Powered by MongoDB • Your privacy matters
+            Powered by WhoGotPwned • Your privacy matters
           </p>
         </footer>
       </div>
+
+      <style jsx>{`
+        @keyframes float {
+          0%, 100% { transform: translateY(0px) rotate(0deg); }
+          50% { transform: translateY(-20px) rotate(180deg); }
+        }
+        @keyframes gradient {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+        .animate-float {
+          animation: float 6s ease-in-out infinite;
+        }
+        .animate-gradient {
+          background-size: 200% 200%;
+          animation: gradient 3s ease infinite;
+        }
+        .glass-effect {
+          background: rgba(255, 255, 255, 0.1);
+          backdrop-filter: blur(10px);
+          border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+      `}</style>
     </div>
   );
 }

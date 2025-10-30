@@ -1,4 +1,4 @@
-import mongoose, { Document, Schema } from 'mongoose';
+wwwimport mongoose, { Document, Schema } from 'mongoose';
 
 export interface IBreachRecord extends Document {
   email: string;

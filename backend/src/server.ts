@@ -26,7 +26,7 @@ const breachDatabase: { [email: string]: Array<{
   description?: string;
   severity: 'low' | 'medium' | 'high';
 }> } = {
-  'test@example.com': [
+  'sanjeet.chougule23@spit.ac.in': [
     {
       name: 'Adobe Breach 2013',
       domain: 'adobe.com',
